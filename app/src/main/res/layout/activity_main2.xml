@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Blue"
+        android:background="#3F51B5"
+        android:textSize="30sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewGreen"
+        android:text="Green"
+        android:background="#4CAF50"
+        android:textSize="30sp"
+        android:layout_above="@id/textViewBlue"
+        android:layout_alignStart="@id/textViewBlue"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        android:background="#f20"
+        android:textSize="30sp"
+        android:id="@+id/textViewRed"
+        android:layout_above="@id/textViewGreen"
+        android:layout_alignStart="@id/textViewGreen"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewOrange"
+        android:text="Orange"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:background="#FF9800"
+        android:layout_alignStart="@id/textViewBlue"
+        android:layout_below="@id/textViewBlue"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewGrey"
+        android:background="#8E8786"
+        android:text="Grey"
+        android:textSize="30sp"
+        android:layout_below="@id/textViewOrange"
+        android:layout_alignStart="@id/textViewBlue"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pink"
+        android:id="@+id/textViewPink"
+        android:background="#E91E63"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/textViewGrey"
+        android:layout_alignStart="@id/textViewGrey"/>
+</RelativeLayout>
